@@ -61,9 +61,19 @@ body {
   img[src*="prework-study.jpg"]{
     width: 100%;
   }
- img 
-  nav a{
-    color: white;
+  .profile-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  img[src*="profile-picture.jpg"]{
+    width: 15%;
+  }
+  img[src*="profile-picture1.jpg"]{
+    width: 15%;
+  }
+  img[src*="profile-picture2.jpg"]{
+    width: 15%;
   }
   .side-bar ul {
     width: 100%;
@@ -72,8 +82,35 @@ body {
   justify-content: center;
   justify-content: space-around;
   }
+  a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: lightblue;
+  }
   .side-bar a {
     display: flex;
     color: blue;
+  }
+  @media screen and (max-width: 1082px) {
+    .side-bar h2{
+      width: 100%;
+      border-right: none;
+      border-bottom: solid 2px blue;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 20px;
+    }
+    .side-bar{
+      display: flex;
+      flex-direction: column;
+    }
+    .side-bar img{
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      margin-bottom: .5%;
+      max-height: 150px;
+      width: 100%;
+    }
     
   }
